@@ -1,0 +1,277 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+    <!-- Entête de la page -->
+    <meta charset="utf-8">
+
+    <title>Maison</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="css/maison.css" media="screen" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <header>
+        <div class="parallax-container">
+
+            <h3 class="white-text text-darken-2">Bienvenue dans le Gard</h3>
+            <h5 class="white-text text-darken-2">Venez profiter du soleil.</h5>
+            <div class="parallax">
+                <img src="img/pontdugard.jpg" alt="Pont du Gard">
+            </div>
+        </div>
+        <nav>
+            <div class="nav-wrapper amber">
+
+                <a href="#!" class="brand-logo">Villa Romana</a>
+
+                <a href="#" data-activates="mobile-demo" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="index.html">
+                            <i class="material-icons left">home</i>Maison</a>
+                    </li>
+                    <li>
+                        <a href="region.html">
+                            <i class="material-icons left">collections</i>Région</a>
+                    </li>
+                    <li>
+                        <a href="formulaire.html">
+                            <i class="material-icons left">contacts</i>Formulaire</a>
+                    </li>
+                </ul>
+
+                <ul class="side-nav amber" id="mobile-demo">
+                    <li>
+                        <a href="index.html">
+                            <i class="material-icons left">home</i>Maison</a>
+                    </li>
+                    <li>
+                        <a href="region.html">
+                            <i class="material-icons left">collections</i>Région</a>
+                    </li>
+                    <li>
+                        <a href="formulaire.html">
+                            <i class="material-icons left">contacts</i>Formulaire</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <h1 class="amber-text text-darken-1">Enregistrer votre réservation</h1>
+
+
+    <!-- Formulaire -->
+    <div class="container">
+        <form class="col s12" method='get' action='index.html'>
+            <div class="row">
+
+                <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="testNom" type="text" class="validate" pattern="^[a-zA-Z]+$" title="Le nom ne doit contenir que des lettres" required>
+                    <label for="testNom">Nom</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate" pattern="^[a-zA-Z]+$" title="Le prénom ne doit contenir que des lettres"
+                        required>
+                    <label for="icon_prefix">Prénom</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="icon_telephone" type="tel" class="validate" pattern="^[0-9]{10}$" required>
+                    <label for="icon_telephone">Téléphone</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">mail</i>
+                    <input id="mail" type="email" class="validate" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="Entrer un mail valide"
+                        required>
+                    <label for="mail">E-mail</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">today</i>
+                    <label>Début du Séjour</label>
+                    <input type="date" class="datepicker" />
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">hotel</i>
+                    <input value="" id="nuitee" type="number" class="validate" title="Entrer un nombre" required>
+                    <label>Nombre de nuitée</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">accessibility</i>
+                    <select>
+                        <option value="" disabled selected>Nombre de personnes</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <label></label>
+                </div>
+
+                <!-- combo region -->
+                <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">add_location</i>
+                    <select>
+                        <option value="" disabled selected>Région</option>
+                        <option value="1"> Auvergne-Rhône-Alpes</option>
+                        <option value="2">Bourgogne-Franche-Comté</option>
+                        <option value="3">Bretagne</option>
+                        <option value="4"> Centre-Val de Loire</option>
+                        <option value="5"> Corse</option>
+                        <option value="6">Grand Est</option>
+                        <option value="7">Hauts-de-France</option>
+                        <option value="8">Île-de-France</option>
+                        <option value="9"> Normandie</option>
+                        <option value="10">Nouvelle-Aquitaine</option>
+                        <option value="11">Occitanie</option>
+                        <option value="12">Pays de la Loire</option>
+                        <option value="13">Provence-Alpes-Côte d'Azur</option>
+                        <option value="14">Outre-Mer</option>
+                        <option value="15">International</option>
+                    </select>
+                    <label></label>
+                </div>
+
+                <div class="col s12 ">
+
+                    <!-- option -->
+                    <div class="col s6" id="options">
+                        
+                            <h5>Option 10€ par jour et par Option</h5>
+                        
+                        <br>
+                        <input type="checkbox" id="test1" />
+                        <label class="col s12 m4" for="test1">&nbsp;&nbsp;&nbsp;Animal</label>
+
+                        <input type="checkbox" id="test2" />
+                        <label class="col s12 m4 " for="test2">&nbsp;&nbsp;&nbsp;Parking</label>
+
+                        <input type="checkbox" id="test3" />
+                        <label class="col s12 m4" for="test3">&nbsp;&nbsp;&nbsp;Fumeur</label>
+                    </div>
+
+                    <!-- type sejour -->
+                    <div class="col s6" id="type">
+                       
+                            <h5>Type de Sejour</h5>
+                       
+                        <br>
+
+                        <label class="col s12 m4 "></label>
+
+                        <input name="group1" type="radio" id="test4" />
+                        <label class="col s12 m4 " for="test4">Loisir</label>
+
+                        <input name="group1" type="radio" id="test5" />
+                        <label class="col s12 m4 " for="test5">Professionnel</label>
+                    </div>
+
+                </div>
+
+                <!-- Boutons -->
+                <div class="col s12 ">
+                    <br>
+                    <br>
+                    <br>
+                    <a class="waves-effect waves-light btn amber accent-2" id="view">
+                        <i class="material-icons right">attach_money</i>Vérifier le tarif</a>
+                    <button class="btn waves-effect waves-light amber accent-2" type="submit" value="Envoyer">Valider
+                        <i class="material-icons right">send</i>
+                    </button>
+
+                    <!-- Resultat -->
+                    <input value="99 €" id="tarif" type="text">
+                    <label>Tarif</label>
+                    <input value=" " id="total" type="text">
+                    <label>Total</label>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <footer class="page-footer amber">
+        <div class="container ">
+            <div class="row">
+                <div class="col s12 m4 amber">
+                    <h5 class="white-text">Adresse</h5>
+                    <p class="grey-text text-lighten-4">55 avenue de Vincennes</p>
+                    <p class="grey-text text-lighten-4">93 MONTREUIL</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510498471473!6m8!1m7!1smZVcq7GfFxObQgGow43Yqw!2m2!1d48.85467073427994!2d2.435972279991091!3f159.24523444424796!4f-6.048956852546723!5f1.1924812503605782"
+                        width="150" height="110" style="border:0" allowfullscreen></iframe>
+                </div>
+
+
+                <div class="col s12 m4 amber">
+                    <h5 class="white-text">Contact</h5>
+                    <ul>
+
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Téléphone : 06 00 00 00 00</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Mail villa.romana@gmail.fr</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col s12 m4 amber">
+                    <h5 class="white-text">Suivez nous sur :</h5>
+                    <ul>
+
+                        <li>
+                            <a href="http://facebook.com/" title="Suivez-moi sur facebook !">
+                                <img src="img/facebook.png" alt="facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com/" title="Suivez-moi sur twitter !">
+                                <img src="img/twitter.jpg" alt="twitter" />
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p id="copyright"> © 2017 Copyright Simplon.co</p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/maison.js"></script>
+        <script src="js/carousel/pgwslideshow.js"></script>
+    </footer>
+</body>
+
+</html>
